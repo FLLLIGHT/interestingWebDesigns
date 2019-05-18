@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gradualChangeSizeCss</title>
+    <style>
+        .myImage{
+            height: 400px;
+            width: 500px;
+            transition: all 500ms ease-in-out;
+            -webkit-transition: all 500ms ease-in-out;
+            -moz-transition: all 500ms ease-in-out;
+            z-index: 200;
+        }
+        .myImage:hover{
+            height: 420px;
+            width: 520px;
+        }
+        span{
+            position: absolute;
+            top: 340px;
+            left: 60px;
+            font-size: 50px;
+            z-index: -1;
+        }
+        a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<img class="myImage" src="img/card1.jpg">
+<a href="http://www.baidu.com"><span>Say Something</span></a>
+</body>
+</html>

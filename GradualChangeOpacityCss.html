@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gradualChangeOpacityCss</title>
+    <style>
+        .myImage{
+            height: 40%;
+            width: 40%;
+            transition: opacity 500ms ease-in-out;
+            -webkit-transition: opacity 500ms ease-in-out;
+            -moz-transition: opacity 500ms ease-in-out;
+            opacity: 0.7;
+            z-index: 200;
+        }
+        .myImage:hover{
+            opacity: 0.2;
+        }
+        span{
+            position: absolute;
+            top: 340px;
+            left: 160px;
+            font-size: 50px;
+            z-index: -1;
+        }
+        a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+ <img class="myImage" src="img/card1.jpg">
+ <a href="http://www.baidu.com"><span>Say Something</span></a>
+
+</body>
+</html>
